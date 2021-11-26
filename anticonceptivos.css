@@ -1,0 +1,17 @@
+body {
+    height: 400px;
+    background-image: url("https://us.123rf.com/450wm/tashechka/tashechka1904/tashechka190400323/120608885-fondo-de-tri%C3%A1ngulos-amarillos-composici%C3%B3n-cuadrada-con-formas-geom%C3%A9tricas-.jpg?ver=6");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: max-content;
+  }
+  .pipe{
+    display:block;
+    margin:auto;
+    background-size: cover;
+  }
+  .pipe2{
+      width: 675px;
+      height: 400px;
+  }

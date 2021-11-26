@@ -1,0 +1,33 @@
+.p{
+    background: linear-gradient(to right, #005C98, #505BDA);
+}
+
+#demo{
+  margin-top: 270px;
+  margin-left: 350px;
+  width: 500px;
+  height: 400px;
+  border-radius: 50px;
+  font-size: 200%;
+  color:black;
+  
+}
+#demos{
+    margin-top: 270px;
+    margin-left: 250px;
+    width: 500px;
+    height: 400px;
+    border-radius: 50px;
+    font-size: 200%;
+    color: black;
+}
+
+#demoss{
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 100%;
+    color: black;
+}

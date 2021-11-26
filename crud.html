@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/genero.png">
+    <title>EDUSEX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+</head>
+
+<div class="bg-info bg-gradient"> 
+<body>
+
+       
+    <div class="container">
+        <br>
+        <br>
+        <button style="float:none;" onclick="window.location.href='/index.html'" class="btn btn-success">VOLVER</button>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="card">
+                    <div class="card-body">
+    <form id="task-form">
+        <div class="form-group">
+        <input type="text" id="task-nombre" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="task-group">
+        <input type="text" id="task-apellido" class="form-control" placeholder="Apellido"></input>
+    </div>
+    <br>
+    <div class="task-group">
+        <input type="text" id="task-correo" class="form-control" placeholder="Correo"></input>
+    </div>
+    <br>
+    <div class="task-group">
+        <input type="text" id="task-telefono" class="form-control" placeholder="Telefono"></input>
+    </div>
+    <br>
+    <button class="btn btn-primary" id="btn-task-form">
+        save
+    </button>
+    </form>
+</div>
+</div>
+</div>
+    <div class="col-md-6" id="tasks-container">
+
+
+
+
+
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+ 
+
+  <script>
+    
+    var firebaseConfig = {
+    apiKey: "AIzaSyA5UiLr9VdduTPgFg6FC9o9B80i6bzBIu0",
+    authDomain: "usuarios-9a133.firebaseapp.com",
+    projectId: "usuarios-9a133",
+    storageBucket: "usuarios-9a133.appspot.com",
+    messagingSenderId: "684077506630",
+    appId: "1:684077506630:web:8eae6a324ca4ae03e92a47",
+    measurementId: "G-9NWX05FB03"
+    };
+  
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const fs = firebase.firestore();
+  </script>
+
+    <script src="/crud.js"></script>
+</body>
+</div>
+</html>
